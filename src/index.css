@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  
+  --color-element-reactive: #f43f5e;
+  --color-element-noble: #c084fc;
+  --color-element-alkali: #f59e0b;
+  --color-element-alkaline: #fbbf24;
+  --color-element-transition: #eab308;
+  --color-element-post: #22d3ee;
+  --color-element-metalloid: #2dd4bf;
+  --color-element-lanthanide: #d8b4fe;
+  --color-element-actinide: #f472b6;
+  --color-element-halogen: #818cf8;
+}
+
+@layer base {
+  body {
+    @apply bg-[#050505] text-slate-200 overflow-hidden;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
+
+.glow-card {
+  box-shadow: 0 0 25px -5px currentColor;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.gold-gradient {
+  background: linear-gradient(to bottom, var(--color-yellow-200), var(--color-yellow-600));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
